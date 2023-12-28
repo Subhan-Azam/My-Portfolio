@@ -1,0 +1,31 @@
+.my_location {
+  border: 1px solid white;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 10px;
+}
+
+table,
+tr,
+th,
+td {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+th {
+  background: linear-gradient(to right, rgb(98, 0, 128), rgb(227, 62, 213));
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 24px;
+}
+
+tr {
+  padding: 10px 15px;
+}

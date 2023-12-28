@@ -1,0 +1,29 @@
+.cardHover {
+  /* background-image: url("../../../public/assets/graph(1).png"); */
+  /* background-position: right; */
+  /* background-repeat: no-repeat; */
+  /* background-size: calc(70% 30%); */
+  /* clip-path: circle(50% at 0% 0%); */
+  /* filter: drop-shadow(0 0 10px purple); */
+  box-shadow: 0 0 15px purple;
+  border: 1px solid white;
+  border-radius: 15px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.cardHover:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 0 40px purple;
+  /* scale: 1; */
+}
+
+/* .cardHover {
+  filter: drop-shadow(0 0 20px purple);
+} */
+
+/* .cardHover:hover {
+  background-image: url(../../../public//assets/graph\(1\).png);
+  clip-path: circle(100%);
+  cursor: pointer;
+} */

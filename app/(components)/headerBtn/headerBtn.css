@@ -1,0 +1,16 @@
+.HeaderBtn {
+  background-image: linear-gradient(
+    to right,
+    rgb(227, 62, 213),
+    rgb(98, 0, 128)
+  );
+
+  filter: drop-shadow(0px 0px 5px rgb(98, 0, 128));
+  max-width: 200px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 9px 40px;
+  color: white;
+  font-family: cursive;
+}
