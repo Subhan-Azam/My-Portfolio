@@ -78,19 +78,17 @@ export default function Header() {
           </div>
         </div>
 
-       
         <div className="floatImage lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <div className="header_img">
             <Image
               style={{ marginBottom: 80 }}
-              src="/assets/my-image.png"
+              src="/assets/myImg.png"
               width={400}
               height={350}
               alt="Picture of the author"
             />
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -32,14 +32,14 @@
   }
 }
 
-.header_img {
+/* .header_img {
   background-image: url("../../../public/assets/graph.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
-}
+} */
 
 .floatImage{
   animation: floatImage 4s ease-in-out infinite;
