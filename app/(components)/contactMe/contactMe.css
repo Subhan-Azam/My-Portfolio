@@ -15,9 +15,9 @@ form {
   max-width: 400px;
   margin: auto;
 }
-input[type="text"] {
+/* input[type="text"] {
   text-transform: capitalize;
-}
+} */
 
 input[type="text"],
 input[type="email"],

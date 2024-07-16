@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import HeaderBtn from "../headerBtn/headerBtn";
 import "./header.css";
+import SocialMedia from "../socialMedia/SocialMedia";
 
 export default function Header() {
   const [text, setText] = useState("");
@@ -43,14 +44,19 @@ export default function Header() {
 
   return (
     <section id="about" className="text-gray-600 body-font">
-      <div className="container myHeader text-white mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+      <div className="container myHeader text-white mx-auto flex px-5 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <div className="typingAnimation">
-            <h1 className="font-bold font-serif text-5xl sm:text-6xl md:text-4xl lg:text-5xl xl:text-6xl">
-              Hi, I'm <br /> Subhan Azam
-            </h1>
+          <div className="typingAnimation ">
+            <div>
+              <p className="font-serif text-2xl font-bold mb-3">
+                Hello It's Me
+              </p>
+              <h1 className="font-bold font-serif text-5xl sm:text-6xl md:text-4xl lg:text-5xl xl:text-6xl">
+                Subhan Azam
+              </h1>
+            </div>
 
-            <div className="flex my-5 ">
+            <div className="flex my-5">
               <p className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-3xl title-font mb-4 mr-3 font-bold">
                 I am
               </p>
@@ -61,13 +67,18 @@ export default function Header() {
             </div>
           </div>
 
-          <p className="mb-8 leading-relaxed font-2xl">
+          <p className="mb-8 font-serif leading-relaxed font-2xl">
             I am a motivated and versatile individual, always eager to take on
             new challenges. With a passion for learning I am dedicated to
             delivering high-quality results. With a positive attitude and a
             growth mindset, I am ready to make a meaningful contribution and
             achieve great things.
           </p>
+
+          <div>
+            <SocialMedia />
+          </div>
+          
           <div className="flex justify-center">
             <a
               href="https://drive.google.com/file/d/1p92H4R7hoel0UATJkvxRg6HOc-yAjgFX/view?usp=sharing"

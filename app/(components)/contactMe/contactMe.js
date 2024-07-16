@@ -46,9 +46,9 @@ export default function ContactMe() {
           type="text"
           required
         />
-        ;
+
         <input
-          autoComplete="off"
+          // autoComplete="off"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
           placeholder="Your Email*"

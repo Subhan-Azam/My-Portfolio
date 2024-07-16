@@ -14,25 +14,25 @@ export default function Navbar() {
             <span className="ml-3 text-2xl text-white">My Portfolio</span>
           </Link>
 
-          <ul className="space-x-5 md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-            <li>
+          <ul className="ul space-x-5 md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <li className="li">
               <Link href="#about" className="text-white">
                 About Me
               </Link>
             </li>
 
-            <li>
+            <li className="li">
               <Link href="#" className="text-white">
                 Skills
               </Link>
             </li>
 
-            <li>
+            <li className="li">
               <Link href="#services" className="text-white">
                 Services
               </Link>
             </li>
-            <li>
+            <li className="li">
               <Link href="#contact" className="text-white">
                 Contact Me
               </Link>

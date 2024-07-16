@@ -28,7 +28,7 @@ export default function Home() {
             <div className="flex flex-wrap">
               <ServicesCard
                 title="Front-End Development"
-                paragraph="Creating user interfaces and experiences using HTML, CSS, and JavaScript."
+                paragraph="Creating user interfaces and experiences using HTML, CSS, and JavaScript. Frameworks React and Next js."
                 src={img1}
               />
               <ServicesCard
