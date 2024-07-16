@@ -39,7 +39,11 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <HeaderBtn title="My Github" />
+          <Link href="https://github.com/Subhan-Azam"
+          target="_blank"
+          >
+            <HeaderBtn title="My Github" />
+          </Link>
         </div>
       </header>
     </>

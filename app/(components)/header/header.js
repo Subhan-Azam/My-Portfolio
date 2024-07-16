@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
+// import Link from 'next/link'
 import Image from "next/image";
-import Link from "next/link";
 import HeaderBtn from "../headerBtn/headerBtn";
 import "./header.css";
 
@@ -69,12 +69,12 @@ export default function Header() {
             achieve great things.
           </p>
           <div className="flex justify-center">
-            <Link
-              href="https://drive.google.com/file/d/1hKcKe4OtAyxVXkPh48AgeqAnPg4aRGsc/view?usp=sharing"
+            <a
+              href="https://drive.google.com/file/d/1p92H4R7hoel0UATJkvxRg6HOc-yAjgFX/view?usp=sharing"
               target="_blank"
             >
               <HeaderBtn title="My Resume" />
-            </Link>
+            </a>
           </div>
         </div>
 
