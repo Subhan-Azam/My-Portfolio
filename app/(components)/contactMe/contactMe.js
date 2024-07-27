@@ -2,8 +2,8 @@
 import "./contactMe.css";
 import HeaderBtn from "../headerBtn/headerBtn";
 import { useState } from "react";
-import { addDoc, collection } from "firebase/firestore";
-import { db } from "@/config/firebase";
+import AlertError from "../alertError/AlertError";
+import AlertSuccess from "../alertSuccess/AlertSuccess";
 
 export default function ContactMe() {
   const [name, setName] = useState("");
@@ -12,27 +12,43 @@ export default function ContactMe() {
   const [msg, setMsg] = useState("");
 
   const onSubmitHandler = async (e) => {
-    e.preventDefault();
-    console.log("Data added");
+    try {
+      e.preventDefault();
+      console.log("Data added");
 
-    const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+      // if (!name || !email || !subject || !meg) {
+      //   <AlertError />;
+      //   return;
+      // }
 
-    const raw = JSON.stringify({
-      name: name,
-      email: email,
-      subject: subject,
-      msg: msg,
-    });
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
 
-    const requestOptions = {
-      method: "POST",
-      headers: myHeaders,
-      body: raw,
-      redirect: "follow",
-    };
+      const raw = JSON.stringify({
+        name: name,
+        email: email,
+        subject: subject,
+        msg: msg,
+      });
 
-    fetch("/api/sendEmail", requestOptions);
+      const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+      };
+
+      fetch("/api/sendEmail", requestOptions);
+
+    } catch (error) {
+      console.log("error in sending email", error);
+    } finally {
+      // setName("");
+      // setEmail("");
+      // setSubject("");
+      // setMsg("");
+      <AlertSuccess />
+    }
   };
 
   return (
@@ -67,7 +83,7 @@ export default function ContactMe() {
           autoComplete="off"
           onChange={(e) => setMsg(e.target.value)}
           value={msg}
-          placeholder="Message"
+          placeholder="Message*"
           required
         ></textarea>
         <HeaderBtn type="submit" title="Submit" />

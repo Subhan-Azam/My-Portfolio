@@ -7,10 +7,10 @@
   margin: 10px 10px;
 }
 
-table,
-tr,
-th,
-td {
+.my_location_content,
+.my_location_content_field,
+.my_location_content_field h3,
+.my_location_content_field span {
   color: white;
   font-size: 20px;
   text-align: left;
@@ -19,13 +19,14 @@ td {
   flex-direction: column;
 }
 
-th {
-  background: linear-gradient(to right, rgb(98, 0, 128), rgb(227, 62, 213));
+.my_location_content_field h3 {
+  background: linear-gradient(to right, rgb(164, 26, 206), rgb(227, 62, 213));
   color: transparent;
   -webkit-background-clip: text;
   font-size: 24px;
+  font-weight: 700;
 }
 
-tr {
+.my_location_content_field {
   padding: 10px 15px;
 }

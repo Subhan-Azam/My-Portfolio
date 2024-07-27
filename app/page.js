@@ -14,7 +14,7 @@ import MyLocation from "./(components)/myLocation/myLocation";
 export default function Home() {
   return (
     <>
-      <div className="mainPage">
+      <div className="mainPage" id="header">
         <Header />
 
         <section id="services" className="mb-28 text-white body-font">
@@ -73,6 +73,7 @@ export default function Home() {
             <MyLocation />
             <ContactMe />
           </div>
+          
         </div>
       </div>
     </>
