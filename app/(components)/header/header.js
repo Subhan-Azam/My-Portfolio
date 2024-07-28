@@ -45,10 +45,10 @@ export default function Header() {
   return (
     <section id="about" className="flex items-center text-gray-600 body-font">
       <div className="container myHeader text-white mx-auto flex px-5 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="reload-effect lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <div className="typingAnimation ">
             <div>
-              <p className="font-serif text-2xl font-bold mb-3">
+              <p className="itsMe opacity-0 transition ease-in delay-150 font-serif text-2xl font-bold mb-3">
                 Hello It's Me
               </p>
               <h1 className="font-bold font-serif text-5xl sm:text-6xl md:text-6xl lg:text-5xl xl:text-6xl">

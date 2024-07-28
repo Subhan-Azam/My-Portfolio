@@ -43,16 +43,17 @@ export default function ContactMe() {
     } catch (error) {
       console.log("error in sending email", error);
     } finally {
+      alert("Data sended")
       // setName("");
       // setEmail("");
       // setSubject("");
       // setMsg("");
-      <AlertSuccess />
+      // <AlertSuccess />
     }
   };
 
   return (
-    <div className="contact_inputs">
+    <div className="scroll-effect-contact-2 contact_inputs">
       <form onSubmit={onSubmitHandler}>
         <input
           autoComplete="off"
@@ -75,7 +76,7 @@ export default function ContactMe() {
           autoComplete="off"
           onChange={(e) => setSubject(e.target.value)}
           value={subject}
-          placeholder="Subject"
+          placeholder="Subject*"
           type="text"
           required
         />

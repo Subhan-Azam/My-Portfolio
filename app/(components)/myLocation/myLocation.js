@@ -3,7 +3,7 @@ import "./myLocation.css";
 export default function MyLocation() {
   return (
     <>
-      <div className="my_location">
+      <div className="scroll-effect-contact-1 my_location">
         <div className="my_location_content">
           <div className="my_location_content_field">
             <h3>Email:</h3>

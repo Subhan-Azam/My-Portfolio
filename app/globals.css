@@ -15,12 +15,12 @@
   background-color: black;
 }
 
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
   background-color: rgb(3, 3, 22);
   width: 6px;
 }
 
-*::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb {
   background-color: rgba(120, 120, 120, 0.891);
   border-radius: 20px;
   width: 9px;
@@ -34,3 +34,111 @@
 .navbar {
   z-index: 1;
 }
+
+
+
+/* Reload Effect */
+.reload-effect {
+  animation: reload-effect 0.5s linear;
+}
+
+@keyframes reload-effect {
+  from {
+    opacity: 0;
+    scale: 0.8;
+    /* transform: translateX(100px); */
+
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    /* transform: translateX(0px); */
+  }
+}
+
+
+
+/* Heading scroll Effect */
+.scroll-animation-heading {
+  animation: scroll-animation-heading linear;
+  animation-timeline: view();
+  animation-range: entry -100% cover 35%;
+}
+
+@keyframes scroll-animation-heading {
+  from {
+    opacity: -1;
+    /* scale: 0.8; */
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    /* scale: 1; */
+    transform: translateX(0px);
+  }
+}
+
+
+
+/* scroll-animation-Cards */
+.scroll-animation-Cards {
+  animation: scroll-animation-Cards linear;
+  animation-timeline: view();
+  animation-range: entry -100% cover 30%;
+}
+
+@keyframes scroll-animation-Cards {
+  from {
+    opacity: -1;
+    scale: 0.7;
+    transform: translateX(100px);
+    overflow: hidden;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+/* scroll-effect-contact */
+.scroll-effect-contact-1 {
+  animation: scroll-effect-contact-1 linear;
+  animation-timeline: view();
+  animation-range: entry -100% cover 35%;
+}
+
+@keyframes scroll-effect-contact-1 {
+  from {
+    opacity: -2;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+/* scroll-effect-contact 2 */
+
+.scroll-effect-contact-2 {
+  animation: scroll-effect-contact-2 linear;
+  animation-timeline: view();
+  animation-range: entry -100% cover 35%;
+}
+
+@keyframes scroll-effect-contact-2 {
+  from {
+    opacity: -2;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+

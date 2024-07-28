@@ -69,7 +69,7 @@ export default function Home() {
             para="You can contact me by inputs or by email"
           />
 
-          <div className="flex flex-wrap items-center justify-around">
+          <div className="reload-effect flex flex-wrap items-center justify-around">
             <MyLocation />
             <ContactMe />
           </div>
