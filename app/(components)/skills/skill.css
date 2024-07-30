@@ -1,0 +1,116 @@
+.skills {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  /* background: #ececec; */
+  margin: 0 100px;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.skills .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  /* color: #333; */
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(42, 42, 42, 0.517);
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: #4070f4;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-per.tailwind {
+  /*progreso de las diferentes lenguajes*/
+  width: 85%;
+  animation-delay: 0.2s;
+}
+
+.skill-per.javascript {
+  /*progreso de las diferentes lenguajes*/
+  width: 70%;
+  animation-delay: 0.2s;
+}
+
+.skill-per.reactJs {
+  /*progreso de las diferentes lenguajes*/
+  width: 80%;
+  animation-delay: 0.2s;
+}
+.skill-per.nextJs {
+  /*progreso de las diferentes lenguajes*/
+  width: 90%;
+  animation-delay: 0.2s;
+}
+
+.skill-per.api {
+  /*progreso de las diferentes lenguajes*/
+  width: 70%;
+  animation-delay: 0.2s;
+}
+.skill-per.mongodb {
+  /*progreso de las diferentes lenguajes*/
+  width: 90%;
+  animation-delay: 0.2s;
+}
+.skill-per.firebase {
+  /*progreso de las diferentes lenguajes*/
+  width: 73%;
+  animation-delay: 0.2s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #4070f4;
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: #4070f4;
+  transform: translateX(-50%) rotate(45deg);
+}

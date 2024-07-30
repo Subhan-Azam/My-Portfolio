@@ -10,6 +10,7 @@ import img4 from "../public/assets/download__1_-removebg-preview.png";
 import img5 from "../public/assets/responsive-design.png";
 import img6 from "../public/assets/download-removebg-preview.png";
 import MyLocation from "./(components)/myLocation/myLocation";
+import Skill from "./(components)/skills/skill";
 
 export default function Home() {
   return (
@@ -73,7 +74,17 @@ export default function Home() {
             <MyLocation />
             <ContactMe />
           </div>
-          
+
+          <div id="skills">
+            <Heading
+              title="Ski"
+              title2="lls"
+              para="You can contact me by inputs or by email"
+            />
+            <div id="skills">
+              <Skill />
+            </div>
+          </div>
         </div>
       </div>
     </>
