@@ -11,6 +11,7 @@ import img5 from "../public/assets/responsive-design.png";
 import img6 from "../public/assets/download-removebg-preview.png";
 import MyLocation from "./(components)/myLocation/myLocation";
 import Skill from "./(components)/skills/skill";
+import ProfessionalSkill from "./(components)/skills/professionalSkill/ProfessionalSkill";
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
       <div className="mainPage" id="header">
         <Header />
 
-        <section id="services" className="mb-28 text-white body-font">
+        <section
+          id="services"
+          className="mt-[460px] lg:mt-0 text-white body-font"
+        >
           <div className="container px-5 mx-auto">
             <Heading
               title="Servi"
@@ -26,7 +30,7 @@ export default function Home() {
               para="I Provide you many services as you see in bottom"
             />
 
-            <div className="flex flex-wrap">
+            <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
               <ServicesCard
                 title="Front-End Development"
                 paragraph="Creating user interfaces and experiences using HTML, CSS, and JavaScript. Frameworks React and Next js."
@@ -81,8 +85,13 @@ export default function Home() {
               title2="lls"
               para="You can contact me by inputs or by email"
             />
-            <div id="skills">
-              <Skill />
+            <div className="flex flex-col md:flex-row" id="skills">
+              <div className="w-[100%] md:w-[50%]">
+                <Skill />
+              </div>
+              <div className="w-[100%] md:w-[50%]">
+                <ProfessionalSkill />
+              </div>
             </div>
           </div>
         </div>

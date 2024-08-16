@@ -3,7 +3,7 @@ import "./servicesCard.css";
 
 export default function ServicesCard(props) {
   return (
-    <div className="reload-effect scroll-animation-Cards cardHover m-auto my-5 py-14 px-5 max-w-[380px] w-full">
+    <div className="mx-0 sm:mx-2 reload-effect scroll-animation-Cards cardHover m-auto my-5 py-14 px-5 max-w-[380px] w-full">
       <div className="flex items-center">
         <Image
           src={props.src}

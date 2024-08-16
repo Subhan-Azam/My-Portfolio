@@ -43,9 +43,9 @@ export default function Header() {
   }, []);
 
   return (
-    <section id="about" className="h-[90vh] flex items-center text-gray-600 body-font">
-      <div className="container myHeader text-white mx-auto flex px-5 md:flex-row flex-col items-center">
-        <div className="reload-effect lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <section id="about" className="h-[100vh] md:h-[90vh] flex items-center text-gray-600 body-font">
+      <div className="container myHeader text-white mx-auto flex px-5 flex-col-reverse lg:flex-row items-center">
+        <div className="reload-effect lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 lg:flex-grow items-center text-center">
           <div className="typingAnimation ">
             <div>
               <p className="itsMe opacity-0 transition ease-in delay-150 font-serif text-2xl font-bold mb-3">
@@ -89,11 +89,11 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="floatImage lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className="floatImage flex justify-center items-center mt-96 lg:mt-0 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <div className="header_img">
             <Image
               style={{ marginBottom: 80 }}
-              src="/assets/myImg.png"
+              src="/assets/manpic.png"
               width={400}
               height={350}
               alt="Picture of the author"

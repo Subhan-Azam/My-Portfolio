@@ -1,11 +1,73 @@
-.my_location {
+.locationCard {
+  margin: 50px 0px;
+  position: relative;
+  max-width: 500px;
+  height: 270px;
+  border-radius: 14px;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  max-width: 490px;
+  height: 260px;
+  background: rgb(3, 3, 15);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  /* outline: 1px solid white; */
+}
+
+.blob {
+  position: absolute;
+  z-index: -6;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(161, 18, 161);
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+/* .my_location {
   border: 1px solid white;
   border-radius: 10px;
-  max-width: 400px;
-  width: 100%;
+  max-width: 500px;
   padding: 20px;
   margin: 10px 10px;
-}
+} */
 
 .my_location_content,
 .my_location_content_field,
@@ -30,3 +92,4 @@
 .my_location_content_field {
   padding: 10px 15px;
 }
+
