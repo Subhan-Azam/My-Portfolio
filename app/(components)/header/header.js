@@ -5,8 +5,17 @@ import Image from "next/image";
 import HeaderBtn from "../headerBtn/headerBtn";
 import "./header.css";
 import SocialMedia from "../socialMedia/SocialMedia";
+import { RiDownload2Fill } from "react-icons/ri";
+
+// import { FaDownload } from "react-icons/fa6";
+
+
+
 
 export default function Header() {
+
+  const icon = <RiDownload2Fill />
+
   const [text, setText] = useState("");
   const phrases = ["Mern Stack Developer     ", "Ui/Ux Designer     "];
   const speed = 100;
@@ -67,7 +76,7 @@ export default function Header() {
             </div>
           </div>
 
-          <p className="my-5 font-serif leading-relaxed font-2xl">
+          <p className="text-gray-400 text-sm leading-5 my-5 font-serif">
             I am a motivated and versatile individual, always eager to take on
             new challenges. With a passion for learning I am dedicated to
             delivering high-quality results. With a positive attitude and a
@@ -80,16 +89,20 @@ export default function Header() {
           </div>
           
           <div className="flex justify-center">
+            {/* <img src={"./assets/graph.png"} alt="" /> */}
             <Link
-              href="https://drive.google.com/file/d/1xs5Z3v6yR5VKdqvwdLVmlek-att5IWGD/view?usp=sharing"
+            href={"./assets/SubhanResume.pdf"}
+            // href={"./assets/graph.png"}
+            download={"SubhanResume.png"}
+              // href="https://drive.google.com/file/d/1xs5Z3v6yR5VKdqvwdLVmlek-att5IWGD/view?usp=sharing"
               target="_blank"
             >
-              <HeaderBtn title="My Resume" />
+              <HeaderBtn title="Resume" icon={icon} />
             </Link>
           </div>
         </div>
 
-        <div className="floatImage flex justify-center items-center mt-96 lg:mt-0 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className="floatImage flex justify-center items-center mt-96 sm:mt-[80px] lg:mt-0 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <div className="header_img">
             <Image
               style={{ marginBottom: 80 }}

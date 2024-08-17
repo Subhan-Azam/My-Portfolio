@@ -19,7 +19,7 @@ export default function MyLocation() {
 
             <div className="my_location_content_field">
               <h3>Location:</h3>
-              <span>Faisalabad, Pakistan</span>
+              <span className="text-gray-400">Faisalabad, Pakistan</span>
             </div>
           </div>
         </div>

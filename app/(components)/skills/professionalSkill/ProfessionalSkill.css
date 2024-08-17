@@ -1,0 +1,37 @@
+@keyframes progress-animation {
+    from {
+      stroke-dasharray: 0 100;
+    }
+    to {
+      stroke-dasharray: var(--progress) 100;
+    }
+  }
+  
+  .circle-bg {
+    stroke: #e6e6e6;
+  }
+  
+  .circle-progress {
+    stroke: #6a0dad;
+    transition: stroke-dasharray 2s;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    animation: progress-animation 1s ease-out forwards;
+  }
+  
+  .text-muted {
+    stroke: #ededed;
+  }
+  
+  .text-accent {
+    stroke: #6a0dad;
+  }
+  
+  .text-foreground {
+    color: #999;
+  }
+  
+  .text-muted-foreground {
+    color: #999;
+  }
+  

@@ -1,11 +1,15 @@
 "use client";
 import "./contactMe.css";
+import { AiOutlineSend } from "react-icons/ai";
 import HeaderBtn from "../headerBtn/headerBtn";
 import { useState } from "react";
 import AlertError from "../alertError/AlertError";
 import AlertSuccess from "../alertSuccess/AlertSuccess";
 
 export default function ContactMe() {
+
+  const icon = <AiOutlineSend />
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -84,7 +88,7 @@ export default function ContactMe() {
           placeholder="Message*"
           required
         ></textarea>
-        <HeaderBtn type="submit" title="Submit" />
+        <HeaderBtn type="submit" title="Submit" icon={icon} />
       </form>
     </div>
   );

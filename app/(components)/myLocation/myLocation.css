@@ -81,6 +81,15 @@
   flex-direction: column;
 }
 
+.my_location_content_field {
+  padding: 10px 15px;
+}
+
+.my_location_content_field span {
+  --tw-text-opacity: 1;
+  color: #9ca3af;
+}
+
 .my_location_content_field h3 {
   background: linear-gradient(to right, rgb(164, 26, 206), rgb(227, 62, 213));
   color: transparent;
@@ -88,8 +97,3 @@
   font-size: 24px;
   font-weight: 700;
 }
-
-.my_location_content_field {
-  padding: 10px 15px;
-}
-

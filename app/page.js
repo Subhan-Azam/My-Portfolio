@@ -21,7 +21,7 @@ export default function Home() {
 
         <section
           id="services"
-          className="mt-[460px] lg:mt-0 text-white body-font"
+          className="mt-[300px] sm:mt-[60px] text-white body-font"
         >
           <div className="container px-5 mx-auto">
             <Heading
@@ -67,7 +67,23 @@ export default function Home() {
           </div>
         </section>
 
-        <div id="contact">
+        <div id="skills" className="mt-[100px]">
+          <Heading
+            title="Ski"
+            title2="lls"
+            para="You can contact me by inputs or by email"
+          />
+          <div className="flex flex-col md:flex-row" id="skills">
+            <div className="mt-[10px] sm:mt-0 w-[100%] md:w-[50%]">
+              <Skill />
+            </div>
+            <div className="mt-[30px] sm:mt-0 w-[100%] md:w-[50%]">
+              <ProfessionalSkill />
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" className="mt-[80px]">
           <Heading
             title="Cont"
             title2="act"
@@ -77,22 +93,6 @@ export default function Home() {
           <div className="reload-effect flex flex-wrap items-center justify-around">
             <MyLocation />
             <ContactMe />
-          </div>
-
-          <div id="skills">
-            <Heading
-              title="Ski"
-              title2="lls"
-              para="You can contact me by inputs or by email"
-            />
-            <div className="flex flex-col md:flex-row" id="skills">
-              <div className="w-[100%] md:w-[50%]">
-                <Skill />
-              </div>
-              <div className="w-[100%] md:w-[50%]">
-                <ProfessionalSkill />
-              </div>
-            </div>
           </div>
         </div>
       </div>

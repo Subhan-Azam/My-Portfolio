@@ -51,6 +51,7 @@
 
 "use client";
 import "./navbar.css"
+import { FaGithub } from "react-icons/fa";
 import { RiMenu2Fill } from "react-icons/ri";
 import { GiTireIronCross } from "react-icons/gi";
 import { useState } from "react";
@@ -63,6 +64,8 @@ export default function Navbar() {
   const openMenuHandler = () => {
     setOpenMenu(!openMenu);
   };
+
+  const icon = <FaGithub />
   return (
     <nav className="sticky top-0 left-0 z-10 bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -132,7 +135,7 @@ export default function Navbar() {
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <Link href="https://github.com/Subhan-Azam" target="_blank">
-              <HeaderBtn title="My Github" />
+              <HeaderBtn title="Github" icon={icon} />
             </Link>
           </div>
         </div>
