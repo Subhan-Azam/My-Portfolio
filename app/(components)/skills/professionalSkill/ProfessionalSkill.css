@@ -16,7 +16,7 @@
     transition: stroke-dasharray 2s;
     transform: rotate(-90deg);
     transform-origin: center;
-    animation: progress-animation 1s ease-out forwards;
+    animation: progress-animation 1s ease-in-out forwards;
   }
   
   .text-muted {

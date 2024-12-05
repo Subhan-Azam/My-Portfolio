@@ -44,40 +44,40 @@
 .skill-per.tailwind {
   /*progreso de las diferentes lenguajes*/
   width: 85%;
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 
 .skill-per.javascript {
   /*progreso de las diferentes lenguajes*/
   width: 70%;
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 
 .skill-per.reactJs {
   /*progreso de las diferentes lenguajes*/
   width: 80%;
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 .skill-per.nextJs {
   /*progreso de las diferentes lenguajes*/
   width: 90%;
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 
 .skill-per.api {
   /*progreso de las diferentes lenguajes*/
   width: 70%;
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 .skill-per.mongodb {
   /*progreso de las diferentes lenguajes*/
   width: 90%;
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 .skill-per.firebase {
   /*progreso de las diferentes lenguajes*/
   width: 73%;
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 
 @keyframes progress {

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import Image from "next/image";
 import HeaderBtn from "../headerBtn/headerBtn";
 import "./header.css";
@@ -9,12 +9,8 @@ import { RiDownload2Fill } from "react-icons/ri";
 
 // import { FaDownload } from "react-icons/fa6";
 
-
-
-
 export default function Header() {
-
-  const icon = <RiDownload2Fill />
+  const icon = <RiDownload2Fill />;
 
   const [text, setText] = useState("");
   const phrases = ["Mern Stack Developer     ", "Ui/Ux Designer     "];
@@ -52,7 +48,10 @@ export default function Header() {
   }, []);
 
   return (
-    <section id="about" className="h-[100vh] md:h-[90vh] flex items-center text-gray-600 body-font">
+    <section
+      id="about"
+      className="h-[100vh] md:h-[90vh] flex items-center text-gray-600 body-font"
+    >
       <div className="container myHeader text-white mx-auto flex px-5 flex-col-reverse lg:flex-row items-center">
         <div className="reload-effect lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 lg:flex-grow items-center text-center">
           <div className="typingAnimation ">
@@ -87,30 +86,41 @@ export default function Header() {
           <div>
             <SocialMedia />
           </div>
-          
+
+          {/* <img src={"./assets/graph.png"} alt="" /> */}
+          {/* // href="https://drive.google.com/file/d/1xs5Z3v6yR5VKdqvwdLVmlek-att5IWGD/view?usp=sharing" */}
+          {/* // href={"./assets/graph.png"} */}
+
           <div className="flex justify-center">
-            {/* <img src={"./assets/graph.png"} alt="" /> */}
-            <Link
-            href={"./assets/SubhanResume.pdf"}
-            // href={"./assets/graph.png"}
-            download={"SubhanResume.png"}
-              // href="https://drive.google.com/file/d/1xs5Z3v6yR5VKdqvwdLVmlek-att5IWGD/view?usp=sharing"
+            <a
+              href={"./assets/subhanresume.pdf"}
+              download={"Subhan Resume (CV)"}
               target="_blank"
             >
               <HeaderBtn title="Resume" icon={icon} />
-            </Link>
+            </a>
           </div>
         </div>
 
         <div className="floatImage flex justify-center items-center mt-96 sm:mt-[80px] lg:mt-0 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <div className="header_img">
-            <Image
-              style={{ marginBottom: 80 }}
-              src="/assets/manpic.png"
-              width={400}
-              height={350}
-              alt="Picture of the author"
-            />
+            <div className="bg-slate-50 w-[450px] h-[450px] rounded-full px-2 py-2">
+              <Image
+                style={{
+                  marginBottom: 80,
+                  borderRadius: 300,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  // opacity: 0.5,
+                }}
+                src="/assets/subhan-img.JPG"
+                width={900}
+                height={900}
+                alt="Picture of the author"
+              />
+            </div>
           </div>
         </div>
       </div>
